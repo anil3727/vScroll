@@ -1,0 +1,22 @@
+<div>
+  <ng-container *ngFor="let row of data; let i = index">
+    <div [ngClass]="(i%2==0)?'even':'odd'"
+    >
+    
+      <span>
+          Sq: {{i+1}}
+      </span>
+      <span>Ms. {{row.name}}</span>
+      <div>
+        {{row.company}}
+      </div>
+      <div>
+        {{row.phone}}
+
+      </div>
+      <span>
+        {{row.address}}
+      </span>
+    </div>
+  </ng-container>
+</div>
